@@ -1,0 +1,116 @@
+{
+	"info": {
+		"_postman_id": "3b62d41d-ca76-4e11-9b6d-65f384fef979",
+		"name": "todoCrud",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "15946227",
+		"_collection_link": "https://blue-space-602674.postman.co/workspace/Nasa~64c750ce-4b03-4800-9dcb-4ba6e9f41489/collection/15946227-3b62d41d-ca76-4e11-9b6d-65f384fef979?action=share&source=collection_link&creator=15946227"
+	},
+	"item": [
+		{
+			"name": "getTasks",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/tasks",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"tasks"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "saveTask",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"hacer endpoint\",\r\n    \"description\": \"averiguar que necesito\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/saveTask",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"saveTask"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updateTask",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"ir la colegio\",\r\n    \"description\": \"buscar a los niños\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/update/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"update",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteTask",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"ir la colegio\",\r\n    \"description\": \"buscar a los niños\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/delete/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"delete",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
