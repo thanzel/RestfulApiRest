@@ -18,7 +18,7 @@ public class RestfulApiCrudApplication {
 	public OpenAPI custumOpenApi() { //bean para agregarle descripción al encabezado de swagger
 		return  new OpenAPI()
 			.info(new Info()
-				.title("Sprin Boot Api Restful with mysql and swagger")
+				.title("Spring Boot Api Restful with mysql and swagger")
 				.version("1.0.0")
 				.description("Proyecto de Prueba")
 				.termsOfService("http")
